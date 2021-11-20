@@ -1,0 +1,106 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat (5, 1fr);
+    grid-template-rows: repeat (4, 1fr);
+    grid-template-areas: 
+    'about about experience experience experience'
+    'about about experience experience experience'
+    'about about education education education'
+    'about about education education education'
+    ;
+    grid-gap: 15px;
+}
+
+
+.about {
+ 
+    grid-area: about;
+    
+}
+
+.experience {
+   
+    grid-area: experience;
+}
+
+.education {
+    
+    grid-area: education;
+}
+
+.footer {
+    background-color: #0076d1;
+    text-align: center;
+    height: 120px;
+    color: white;
+    padding-top: 10px;
+}
+
+/* .progress-bar {
+    width: 30px;
+} */
+
+.card img {
+    position: relative;
+    z-index: 3;
+}
+.card h5 {
+    margin-top: 180px;
+    position: absolute;
+    color: white;
+    margin-left: 5px;
+    z-index: 4;
+}
+
+.card h5:hover {
+    box-sizing: border-box;
+    box-shadow: black;
+    color:white;
+    border: solid 0.1px white;
+    border-radius: 5px;
+    text-shadow: black;
+    text-transform: uppercase;
+    font-size: 17px;
+
+}
+
+.current {
+    border-radius: 3px;
+    background-color:#0076d1;
+    color: white;
+
+}
+
+.soci .soc {
+    font-size: 30px;
+    
+}
+
+@media screen and (max-width: 700px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .info {
+       padding-left: 120px;
+       border: solid 1px black;
+       border-radius: 5px;
+       padding: 3px;
+       padding-left: 120px;
+    }
+
+    img {
+        padding-left: 18%;
+        width: 400px;
+    }
+
+    .card h5 {
+        padding-left: 30%;
+        padding-top: 20%;
+    }
+
+    .card h5:hover {
+        border: none;
+        font-size: 20px;
+    }
+}
